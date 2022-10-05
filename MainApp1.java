@@ -24,6 +24,12 @@ public class MainApp1 {
             result[k] = sc.nextDouble();
         }
 
+        for (int i=0;i<rank;i++){
+            int j=change(matrix,result, i);
+            swap(matrix,result,i, j);
+        }
+
+
         double [] x=iteration(matrix,result,rank);
         double[] errors = new double[rank];
 
@@ -44,7 +50,7 @@ public class MainApp1 {
         for (int i = 0; i < rank; i++)
             System.out.println(errors[i]);
     }
-
+    
     public static double[] iteration(double[][] a, double[] y, int n) {
         double [] res=new double[n];
         for (int i=0;i<n;i++)
@@ -81,7 +87,7 @@ public class MainApp1 {
         }while(true);
         return res;
     }
-    
+
     public static void swap(double[][] a, double[] b, int i1, int j1)
     {
         if (i1==j1)
@@ -95,8 +101,8 @@ public class MainApp1 {
             double temp=b[i1];
             b[i1]=b[j1];
             b[j1]=temp;
-    }    
-    
+    }
+
     public static int change(double [][] a, double[] b,int j1){
         for (int i=j1;i<a.length;i++) {
             double sum=0;
@@ -106,12 +112,12 @@ public class MainApp1 {
             }
             if (abs(a[i][j1])>=sum) return i;
         }
-        
+
         double max=Math.abs(a[j1][j1]);
         for (int i=j1+1;i<a.length;i++)
             if (max<abs(a[i][j1]))
                 return i;
-        
+
         return j1;
     }
 }
