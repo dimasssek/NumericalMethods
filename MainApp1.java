@@ -81,8 +81,40 @@ public class MainApp1 {
         }while(true);
         return res;
     }
+    
+    public static void swap(double[][] a, double[] b, int i1, int j1)
+    {
+        if (i1==j1)
+            return;
+        for (int j=0;j<a.length;j++)
+            {
+                double temp=a[i1][j];
+                a[i1][j]=a[j1][j];
+                a[j1][j]=temp;
+            }
+            double temp=b[i1];
+            b[i1]=b[j1];
+            b[j1]=temp;
+    }    
+    
+    public static int change(double [][] a, double[] b,int j1){
+        for (int i=j1;i<a.length;i++) {
+            double sum=0;
+            for (int j = 0; j < a.length; j++) {
+                if (j!=j1)
+                    sum+=abs(a[i][j]);
+            }
+            if (abs(a[i][j1])>=sum) return i;
+        }
+        
+        double max=Math.abs(a[j1][j1]);
+        for (int i=j1+1;i<a.length;i++)
+            if (max<abs(a[i][j1]))
+                return i;
+        
+        return j1;
+    }
 }
-
 /*
 *
 32 2 1 3 1
@@ -91,16 +123,11 @@ public class MainApp1 {
 1 2 3 56 1
 1 2 1 3 32
 * 43 14 -3 169 -19
-
-
 1 -1 3 1
 4 -1 5 4
 2 -2 4 1
 1 -4 5 -1
 * 5 4 6 3
-
-
-
 4 1 1
 1 6 -1
 1 2 5
