@@ -1,3 +1,5 @@
 # dins
-https://habr.com/ru/post/270289/
-https://github.com/devtype-blogspot-com/Java-Examples/blob/master/SystemOfLinearEquations_Gaussian/src/Main.java
+0. Метод Гаусса
+1. Метод простых итераций
+2. Метод наименьших квадратов
+3. Метод половинного деления(дихотомия_бисекция)
