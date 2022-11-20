@@ -1,3 +1,4 @@
+//https://intuit.ru/studies/courses/2260/156/lecture/27239?page=3
 #include <iostream>
 #include <cmath>
 #include <math.h>
