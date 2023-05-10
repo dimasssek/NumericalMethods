@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planets>
+<planet name="Экзопланета 4">
+<id>500</id>
+<number_of_satellites>100</number_of_satellites>
+</planet>
+<planet name="Экзопланета 5">
+<id>600</id>
+<number_of_satellites>82</number_of_satellites>
+</planet>
+</planets>

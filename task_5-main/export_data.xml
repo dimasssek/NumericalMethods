@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planets>
+	<planet name="Меркурий">
+		<id>1</id>
+		<number_of_satellites>0</number_of_satellites>
+	</planet>
+	<planet name="Венера">
+		<id>2</id>
+		<number_of_satellites>0</number_of_satellites>
+	</planet>
+	<planet name="Земля">
+		<id>3</id>
+		<number_of_satellites>1</number_of_satellites>
+	</planet>
+	<planet name="Марс">
+		<id>4</id>
+		<number_of_satellites>2</number_of_satellites>
+	</planet>
+	<planet name="Юпитер">
+		<id>5</id>
+		<number_of_satellites>79</number_of_satellites>
+	</planet>
+	<planet name="Сатурн">
+		<id>6</id>
+		<number_of_satellites>82</number_of_satellites>
+	</planet>
+	<planet name="Уран">
+		<id>7</id>
+		<number_of_satellites>23</number_of_satellites>
+	</planet>
+	<planet name="Нептун">
+		<id>8</id>
+		<number_of_satellites>14</number_of_satellites>
+	</planet>
+	<planet name="Экзопланета 2">
+		<id>50</id>
+		<number_of_satellites>100</number_of_satellites>
+	</planet>
+	<planet name="Экзопланета 3">
+		<id>60</id>
+		<number_of_satellites>82</number_of_satellites>
+	</planet>
+	<planet name="Экзопланета 4">
+		<id>500</id>
+		<number_of_satellites>100</number_of_satellites>
+	</planet>
+	<planet name="Экзопланета 5">
+		<id>600</id>
+		<number_of_satellites>82</number_of_satellites>
+	</planet>
+</planets>
